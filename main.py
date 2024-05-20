@@ -1,8 +1,9 @@
-##데이터 타입
-number_type = 1;
-text_type = "1234"
-boolean_type = True; #True,False의 첫글자는 무조건 대문자
+##function
+def hello_world(year = 2024, name = "Sunny") :
+  print("hello ",name)
+  print("happy ", year , "year")
 
-print(number_type);
-print(text_type);
-print(boolean_type);
+hello_world()
+hello_world(2025)
+hello_world(name="Cloudy")
+hello_world(2025,"Cloudy")
