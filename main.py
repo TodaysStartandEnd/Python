@@ -1,20 +1,18 @@
-##function(include return)
-##return을 통해 함수에서의 값을 다른 함수로 넘겨##(반환해) 줄 수 있다.
-def input_name(name):
-  return name
+## control statement : if, elif, else
+## elif and else may or may not be used. 
 
-
-def input_age(age):
-  return age
-
-
-def input_number_no_010(number):
-  fullnumber = "010" + number
-  return fullnumber
-
-##f" "안에 문자열과 {변수}구조를 연결해 ##string(문자열) format을 만들어 줄 수 있다.
-def info(name, age, number):
-  print(f"이름 : {name} \n나이 : {age} \n전화번호 : {number}")
-
-
-info(input_name("Sunny"), input_age(100), input_number_no_010("12345678"))
+score = int(input("Enter your score: "))
+if score >= 90:
+  print("A+")
+elif score >= 80:
+  print("A")
+elif score >= 70:
+  print("B+")
+elif score >= 60:
+  print("B")
+elif score >= 50:
+  print("C+")
+elif score >= 40:
+  print("C")
+else :
+  print("F")
