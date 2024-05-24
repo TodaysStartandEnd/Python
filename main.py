@@ -1,11 +1,13 @@
-## Standard Library && and, or
-## https://docs.python.org/3/library/index.html
+## Loop : while
 
-from random import randint
+num = 5
 
-print("roll the dice!");
-dice = randint(0, 7)
-if dice > 0 and dice  < 7 :
-  print("you roll a ",dice)
-elif dice == 0 or dice == 7 :
-  print(dice, " is an invaid value in this dice")
+while num > 0:
+  print(num)
+  num = num - 1
+
+print('\n')
+
+while num <= 5:
+  print(num)
+  num = num + 1
