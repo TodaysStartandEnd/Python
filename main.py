@@ -1,13 +1,11 @@
-## Loop : while
+## Method
+## = data+function 
 
-num = 5
+moto = "tAke rIsks"
 
-while num > 0:
-  print(num)
-  num = num - 1
+print(moto.capitalize())
+print(moto.upper())
+print(moto.lower())
+print(moto.find("r"))
+print(moto.replace("tAke","take"))
 
-print('\n')
-
-while num <= 5:
-  print(num)
-  num = num + 1
