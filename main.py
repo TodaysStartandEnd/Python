@@ -1,12 +1,10 @@
-## Loop : for
-files = ("main", "stack", "queue", "deque.py")
-python_files = []
+## Package 
+## In pypi.org, you can find various packages that you can use in your code.
+## replit.com is a website that allows you to load various packages via the cubic package button on the toolbar next to it.
 
-for file in files:
-    if not file.endswith(".py") :
-      python_files.append(f"{file}.py")
-    else :
-      python_files.append(file)
+from requests import get
 
-for file in python_files:
-  print(f"{file} \n")
+website = "https://www.google.com"
+response = get(website)
+print(response) ##<Response [200]>
+print(response.status_code) ##200
