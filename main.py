@@ -1,10 +1,18 @@
-## Package 
-## In pypi.org, you can find various packages that you can use in your code.
-## replit.com is a website that allows you to load various packages via the cubic package button on the toolbar next to it.
+## Class 
+## method + variable
+## 1. method(functions in class) : The first parameter of the method points to the address of the object itself.
 
-from requests import get
+class Person :
+  def __init__(self) :
+      print (self) ##<__main__.Person object at 0x7901da58ebf0>
+      self.name = "Sunny"
+      self.age = 100
+      
 
-website = "https://www.google.com"
-response = get(website)
-print(response) ##<Response [200]>
-print(response.status_code) ##200
+Doctor = Person()
+print(Doctor) ## <__main__.Person object at 0x7901da58ebf0>
+print(Doctor.name); ##Sunny
+print(Doctor.age);##100
+
+
+
